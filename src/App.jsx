@@ -26,13 +26,13 @@ useEffect(() => {
   })
 }, [])
 
-console.log("coins: ", coin)
+console.log("coins: ", coins)
 
   return (
     <div>
        <h1> Crypto App </h1>
        {loading && <p> Loading. . .</p>}
-       {error && <div className="error>{error}</div>"}
+      {error && <div className="error">{error}</div>}
         {!loading && !error && (
           <main className="grif">
             {coins.map((coin) => (
